@@ -5,7 +5,7 @@ The game board is displayed using buttons, and the game logic is implemented in 
 ## Installation
 This code requires the following dependencies:
 
- - Streamlit: can be installed using pip install streamlit
+ - Streamlit: can be installed using `pip install streamlit`
 
 ## Usage
 To start the game, run the following command in your terminal:
@@ -24,4 +24,5 @@ Then, the game will be launched in a new browser tab.
 
 ## Credits
 This code was written by Alex Gaskins and is based on a tutorial by Sven B. 
+
 [Tutorial Used](https://youtu.be/VqgUkExPvLY)
