@@ -19,7 +19,7 @@ Then, the game will be launched in a new browser tab.
  - If the game ends, a message will be displayed showing the winner or that the game was a tie. 
 
 ## Files
- - tic_tac_toe.py: The main Python script that runs the game.
+ - game.py: The main Python script that runs the game.
  - README.md: This file explaining the code and how to use it.
 
 ## Credits
