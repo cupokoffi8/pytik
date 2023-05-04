@@ -1,6 +1,9 @@
 import streamlit as st
 import random 
 
+#Setup page title 
+st.set_page_config(page_title="PyTik", page_icon="🎟")
+
 # Initialize the board
 board = ['-'] * 9
 
@@ -60,6 +63,9 @@ def check_game_over():
 def update_board(button_id): 
     global board, current_player
 
+    st.title("Tic Tac Toe")
+    st.header("Continue playing on the top board")
+
     # check if the button has already been clicked
     if board[button_id] != "-":
         st.warning("This cell has already been filled!")
@@ -88,18 +94,39 @@ def update_board(button_id):
         for i in range(9):
             st.session_state[f"button_{i}_disabled"] = True
 
+    # Large <br /> element
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+    st.text("")
+
 
 def main():
+
+    st.title("Tic Tac Toe")
+    # Display the current player
+    st.write("Current Player: ", current_player)
+
     # Initialize the session state variables for the buttons
     for i in range(9):
         st.session_state[f"button_{i}_disabled"] = False
 
     # Draw the board
-    draw_board()
-
-    st.title("Tic Tac Toe")
-    # Display the current player
-    st.write("Current Player: ", current_player)
+    draw_board() 
 
 
 if __name__ == "__main__":
